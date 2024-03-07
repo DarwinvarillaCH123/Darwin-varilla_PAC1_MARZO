@@ -1,0 +1,53 @@
+cantidad_ferreteria = 0
+cantidad_aseo = 0
+cantidad_seguridad = 0
+cantidad_alimentos = 0
+cantidad_electrodomesticos = 0
+
+total_recaudado = 0
+
+print('vienbenido al menu wey')
+print('cosas  disponibles\n1. Ferretería\n2. Aseo\n3. Seguridad\n4. Alimentos\n5. Electrodomésticos\n6.chao')
+
+while True:
+    categoria = input("Ingrese la categoría del producto o '6' para finalizar: ").capitalize()
+
+    if categoria == '6':
+        break
+    
+    if categoria not in ['1', '2', '3', '4', '5']:
+        print("Categoría no válida. Por favor, seleccione una categoría válida.")
+        continue
+
+    precio = float(input("Ingrese el precio del producto: "))
+    
+    if categoria == '1':
+        descuento = 0.10
+        cantidad_ferreteria += 1
+    elif categoria == '2':
+        descuento = 0.05
+        cantidad_aseo += 1
+    elif categoria == '3':
+        descuento = 0.15
+        cantidad_seguridad += 1
+    elif categoria == '4':
+        descuento = 0.08
+        cantidad_alimentos += 1
+    elif categoria == '5':
+        descuento = 0.12
+        cantidad_electrodomesticos += 1
+
+    precio_con_descuento = precio * (1 - descuento)
+    total_recaudado += precio_con_descuento
+
+    print(f"El precio final del producto en la categoría {categoria} es: {precio_con_descuento:.2f}.")
+
+
+print("\nResumen de compras:")
+print("Cantidad de productos comprados por categoría:")
+print("Ferretería:", cantidad_ferreteria)
+print("Aseo:", cantidad_aseo)
+print("Seguridad:", cantidad_seguridad)
+print("Alimentos:", cantidad_alimentos)
+print("Electrodomésticos:", cantidad_electrodomesticos)
+print("Total recaudado:", total_recaudado)
