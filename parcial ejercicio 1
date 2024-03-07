@@ -1,0 +1,67 @@
+import os
+controlBln =  True
+a = 0
+e = 0
+i = 0
+o = 0
+u = 0
+A = 0
+E = 0
+I = 0
+O = 0
+U = 0
+TOTAL_VOCALES = 0
+
+while controlBln == True:
+    os.system('cls')
+    letrasStr = (input('ingrse algunas letras\n2.finalizar ->\n '))
+    if letrasStr == 'a':
+          a += 1
+          TOTAL_VOCALES += 1
+          
+    if letrasStr == 'a':
+          a += 1
+          TOTAL_VOCALES += 1
+    if letrasStr == 'e':
+          e += 1
+          TOTAL_VOCALES += 1 
+    if letrasStr == 'i':
+          i += 1
+          TOTAL_VOCALES += 1  
+    if letrasStr == 'o':
+          o += 1
+          TOTAL_VOCALES += 1                   
+    if letrasStr == 'u':
+          u += 1
+          TOTAL_VOCALES += 1      
+    if letrasStr == 'A':
+          A += 1
+          TOTAL_VOCALES += 1    
+    if letrasStr == 'E':
+          E += 1
+          TOTAL_VOCALES += 1
+    if letrasStr == 'I':
+          I += 1
+          TOTAL_VOCALES += 1
+    if letrasStr == 'O':
+          O += 1
+          TOTAL_VOCALES += 1
+    if letrasStr == 'U':
+          U += 1
+          TOTAL_VOCALES += 1
+          os.system('cls') 
+    if letrasStr== '2':
+        controlBln = False
+        print ('Vocales totales :',TOTAL_VOCALES)
+        print('a:',a)
+        print('e:',e)
+        print('i:',i)
+        print('o:',o)
+        print('u:',u)
+        print('A:',A)
+        print('E:',E)
+        print('I:',I)
+        print('O:',O)
+        print('U:',U)
+        
+        
