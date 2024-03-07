@@ -1,0 +1,20 @@
+
+print("hola, soy tu programa favorito para aprender a multiplicar <3")
+numero = int(input(" ingrese un número entero POSITIVO, SOLO POSITIVOOO XD: "))
+
+while numero <= 0:
+    print("un numero valido tonto.")
+    numero = int(input(" ingrese un número entero positivo XD: "))
+
+print("su numero es:", numero)
+
+print("esta es su tabla de multiplicar", numero, ":")
+
+tabla = 1
+
+while tabla <= 10:
+    multiplicaciones = numero * tabla
+    print(numero, "x", tabla, "=", multiplicaciones)
+    tabla += 1
+
+print("¡listo, <3!")
